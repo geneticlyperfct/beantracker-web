@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": true,
+    "eslint.alwaysShowStatus": true,
+    "files.autoSave": "onFocusChange",
+    "javascript.format.enable": false,  // Disable built-in formatter if using Prettier
+    "prettier.requireConfig": true       // Only format when a Prettier config is present
+  }

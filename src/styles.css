@@ -28,3 +28,81 @@
     margin-bottom: 0.5rem;
     border-radius: 4px;
   }
+
+.add-game-container {
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.add-game-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-game-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-input,
+.form-select,
+.form-datepicker {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.game-type-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.game-type-button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.game-type-button.active {
+  background-color: blue;
+  color: white;
+}
+
+.form-submit-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-submit-button:hover {
+  background-color: darkgreen;
+}
+
+.team-score-container,
+.opponent-score-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.score-input {
+  max-width: 100px;
+  text-align: center;
+}

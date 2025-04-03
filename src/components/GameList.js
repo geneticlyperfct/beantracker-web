@@ -1,14 +1,19 @@
 import React from 'react';
-import GameItem from './GameItem';
 
-const GameList = ({ games }) => {
+function GameList({ games = [] }) {
+  if (!games.length) {
+    return <p>No games available.</p>;
+  }
+
   return (
-    <div>
+    <ul>
       {games.map((game, index) => (
-        <GameItem key={index} game={game} />
+        <li key={index}>
+          <strong>{game.date}</strong> - {game.opponent} at {game.location} ({game.score})
+        </li>
       ))}
-    </div>
+    </ul>
   );
-};
+}
 
 export default GameList;
